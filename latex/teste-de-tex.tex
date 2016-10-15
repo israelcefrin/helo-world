@@ -2,6 +2,9 @@
 \usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
 \geometry{a4paper}                   		% ... or a4paper or a5paper or ...
 %\geometry{landscape}                		% Activate for rotated page geometry
+\usepackage[utf8]{inputenc}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
 \usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
 \usepackage{graphicx}				% Use pdf, png, jpg, or epsÂ§ with pdflatex; use eps in DVI mode
 								% TeX will automatically convert eps --> pdf in pdflatex
@@ -14,8 +17,10 @@
 
 \title{Licenças Creative Commons em periódicos eletrônicos}
 \author{Israel Cefrin}
-%\date{}							% Activate to display a given date or no date
-
+%\date{today}							% Activate to display a given date or no date
+\usepackage{datetime}
+\newdate{date}{15}{10}{2016}
+\date{\displaydate{date}}
 \begin{document}
 \maketitle
 %\section{}
